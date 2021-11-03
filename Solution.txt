@@ -1,0 +1,20 @@
+Question 1:
+    The authentication shcemes is session authentication. The states are managed to store in a class.
+Question 2:
+    http -a use a basic authentication scheme.
+
+http POST http://127.0.0.1:8000/api/snippets/ "Authorization:Token 67498bc5501f357e6f781981a0c8dda4d4640fdc" code="print('Token works')"
+
+Question 3:
+    Using the session authentication require server to store every state, token Authorization does not.
+    Only if the token match the owner of the code snippets could excute. The basic authentication only need the code of the Authorization which is unsafe
+
+Question 4:
+    When you click "log in with Google"
+    You clinet requests authorization from user and get authentication grant
+    Then client uses authentication grant to get Access token from Authorization Server
+    Client use Access token to get protected resource from resource server
+    Summary From https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+
+Quetion 5:
+    https://github.com/DecKirin/authentication-lab
